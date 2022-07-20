@@ -3,7 +3,7 @@
 </h1>
 
 <h3 align="center">
-	Perfeito para Seus links preferidos
+	Perfeito para guardar seus links preferidos
 </h3>
 
 <p align="center">
@@ -26,7 +26,7 @@
 </p>
 
 ## About
-Site criado com proposito de seus links preferidos, para que você não perca estes links e notas.
+Site criado com proposito de guardar seus links preferidos, para que você não perca estes links e notas.
 
 
 
@@ -41,7 +41,7 @@ To Install this project, follow the steps above:
 ```bash
 $ git clone https://github.com/Vander-Reis/rocketNotesFrontEnd
 
-$ git clone https://github.com/Vander-Reis/rocketNotes
+$ git clone https://github.com/Vander-Reis/rocketNotesApi
 ```
 
 ## Usage
