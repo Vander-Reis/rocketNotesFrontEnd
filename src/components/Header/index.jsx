@@ -5,6 +5,7 @@ import { Container, Profile, Logout } from "./styles";
 export function Header() {
 
     const { signOut } = useAuth();
+    console.log(useAuth());
 
     return (
         <Container>

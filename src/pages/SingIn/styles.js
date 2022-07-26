@@ -5,6 +5,11 @@ export const Container = styled.div`
     height: 100vh;
     display: flex;
     align-items: stretch;
+    
+    @media (max-width: 900px) {
+        margin: auto;
+        display: block;
+    }
 `;
 
 export const Form = styled.form`
@@ -36,10 +41,20 @@ export const Form = styled.form`
         color: ${({ theme }) => theme.COLORS.ORANGE};
 
     }
+
+    @media (max-width: 800px) {
+        padding: 0px 50px;
+
+        > h1 {
+            font-size: 40px;
+        }
+    }
 `;
 
 export const Background = styled.div`
-    flex: 1;
-    background: url(${backgroundImg}) no-repeat center center;
-    background-size: cover;
+    @media(min-width: 900px) {
+        flex: 1;
+        background: url(${backgroundImg}) no-repeat center center;
+        background-size: cover;
+    }
 `;
