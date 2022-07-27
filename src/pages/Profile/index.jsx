@@ -5,7 +5,6 @@ import { FiArrowLeft, FiUser, FiMail, FiLock, FiCamera } from 'react-icons/fi';
 import { Container, Form, Avatar } from './styles';
 import { Input } from '../../components/Input';
 import { Button } from '../../components/Button';
-import { ButtonText } from '../../components/ButtonText';
 import avatarPlaceholder from '../../assets/avatar_placeholder.svg';
 import { api } from '../../service/api';
 
@@ -23,14 +22,16 @@ export function Profile() {
     const navigate = useNavigate();
 
     async function handleUpdate() {
-        const user = {
+        const updated = {
             name, 
             email, 
             password: passwordNew,
             old_password: passwordOld,
-        }
+        };
 
-        await updateProfile({user, avatarFile});
+        const userUpdated = Object.assign(user, updated);
+
+        await updateProfile({user: userUpdated, avatarFile});
     }
 
     function handleChangeAvatar(event) {
